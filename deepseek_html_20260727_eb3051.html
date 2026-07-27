@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Essékome | Psychologue • Coach Familiale • Conseillère Chrétienne</title>
+    <meta name="description" content="Psychologue et coach familiale chrétienne. Transformez votre famille, guérissez vos blessures, découvrez votre mission. Consultation, coaching parental, guérison intérieure.">
+    <meta name="keywords" content="psychologue chrétienne, coach familiale, parentalité positive, guérison intérieure, psychologie chrétienne, coach adolescent, orientation scolaire, relations familiales, Cotonou, Bénin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-violet: #2D1B4E;
+            --deep-violet-light: #3D2A5E;
+            --deep-violet-dark: #1A0F30;
+            --gold: #C9A84C;
+            --gold-light: #D4B96A;
+            --gold-dark: #A8892E;
+            --gold-pale: #F5EDD6;
+            --white: #FFFFFF;
+            --off-white: #FAF9F6;
+            --cream: #FDF9F0;
+            --neutral-50: #F9F8F7;
+            --neutral-100: #F3F1EE;
+            --neutral-200: #E8E4DD;
+            --neutral-300: #D1CCC3;
+            --neutral-400: #A9A298;
+            --neutral-500: #7D766C;
+            --neutral-600: #5C554C;
+            --neutral-700: #3D3730;
+            --neutral-800: #1E1B17;
+            --neutral-900: #0F0D0A;
+            --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            --font-body: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --shadow-sm: 0 1px 2px rgba(45, 27, 78, 0.04);
+            --shadow-md: 0 4px 16px rgba(45, 27, 78, 0.07);
+            --shadow-lg: 0 12px 40px rgba(45, 27, 78, 0.10);
+            --shadow-xl: 0 24px 64px rgba(45, 27, 78, 0.13);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            --max-width: 1280px;
+            --nav-height: 76px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--neutral-700);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        /* ─── NAVIGATION ─── */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: all var(--transition-smooth);
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+        }
+        .nav.scrolled {
+            border-bottom-color: var(--neutral-200);
+            box-shadow: var(--shadow-md);
+        }
+        .nav-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 28px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        .nav-logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, var(--deep-violet), var(--deep-violet-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            flex-shrink: 0;
+        }
+        .nav-logo-text {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--deep-violet);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .nav-logo-text span {
+            display: block;
+            font-family: var(--font-ui);
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: var(--gold-dark);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-600);
+            font-family: var(--font-ui);
+            font-size: 0.88rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 50px;
+            transition: all var(--transition-fast);
+            white-space: nowrap;
+            letter-spacing: -0.01em;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--deep-violet);
+            background: var(--gold-pale);
+        }
+        .nav-cta-btn {
+            background: var(--deep-violet) !important;
+            color: var(--white) !important;
+            padding: 10px 20px !important;
+            font-weight: 600 !important;
+            border-radius: 50px !important;
+            transition: all var(--transition-smooth) !important;
+            letter-spacing: -0.01em !important;
+        }
+        .nav-cta-btn:hover {
+            background: var(--deep-violet-light) !important;
+            color: var(--white) !important;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-1px);
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--deep-violet);
+            z-index: 1001;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--deep-violet);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+        .nav-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        @media (max-width: 960px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 300px;
+                height: 100vh;
+                background: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 100px 28px 40px;
+                gap: 2px;
+                box-shadow: var(--shadow-xl);
+                transition: right var(--transition-smooth);
+                overflow-y: auto;
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .nav-links a {
+                display: block;
+                width: 100%;
+                padding: 12px 16px;
+                font-size: 1rem;
+                border-radius: var(--radius-sm);
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .nav-cta-btn {
+                margin-top: 8px;
+                text-align: center;
+            }
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            padding: calc(var(--nav-height) + 60px) 28px 80px;
+            background: linear-gradient(170deg, var(--cream) 0%, var(--off-white) 40%, var(--white) 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -120px;
+            right: -180px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(45, 27, 78, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            border: 1px solid var(--neutral-200);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-family: var(--font-ui);
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--neutral-600);
+            margin-bottom: 28px;
+            letter-spacing: -0.01em;
+        }
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.6);
+            }
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+            font-weight: 700;
+            color: var(--deep-violet);
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+        }
+        .hero h1 .gold-accent {
+            color: var(--gold-dark);
+            position: relative;
+        }
+        .hero h1 .gold-accent::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gold-pale);
+            border-radius: 3px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--neutral-500);
+            max-width: 600px;
+            margin: 0 auto 36px;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: var(--font-ui);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all var(--transition-smooth);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: var(--deep-violet);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-primary:hover {
+            background: var(--deep-violet-light);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--deep-violet);
+            border: 2px solid var(--deep-violet);
+        }
+        .btn-outline:hover {
+            background: var(--deep-violet);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-gold:hover {
+            background: var(--gold-dark);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        /* ─── SOCIAL PROOF STRIP ─── */
+        .social-proof {
+            background: var(--white);
+            padding: 28px;
+            text-align: center;
+            border-bottom: 1px solid var(--neutral-100);
+        }
+        .social-proof-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-ui);
+            font-size: 0.88rem;
+            color: var(--neutral-500);
+            font-weight: 500;
+        }
+        .social-proof-item .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--gold-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .social-proof-item strong {
+            color: var(--deep-violet);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION COMMON ─── */
+        .section {
+            padding: 80px 28px;
+        }
+        .section-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .section-label {
+            font-family: var(--font-ui);
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold-dark);
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 700;
+            color: var(--deep-violet);
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .section-subtitle {
+            color: var(--neutral-500);
+            font-size: 1.05rem;
+            max-width: 620px;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 52px;
+        }
+        .section-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        /* ─── FRAMEWORK ─── */
+        .framework-section {
+            background: var(--deep-violet);
+            color: var(--white);
+            padding: 80px 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        .framework-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .framework-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            text-align: center;
+            transition: all var(--transition-smooth);
+            position: relative;
+        }
+        .framework-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+            border-color: var(--gold);
+        }
+        .framework-step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: var(--deep-violet);
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+        }
+        .framework-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+        .framework-card p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+        .framework-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+        @media (max-width: 800px) {
+            .framework-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            .framework-arrow {
+                transform: rotate(90deg);
+                padding: 4px 0;
+            }
+        }
+
+        /* ─── SERVICES GRID ─── */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: all var(--transition-smooth);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            opacity: 0;
+            transition: opacity var(--transition-smooth);
+        }
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-sm);
+            background: var(--gold-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--deep-violet);
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+        .service-card p {
+            font-size: 0.9rem;
+            color: var(--neutral-500);
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+        .service-card .learn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            font-family: var(--font-ui);
+            transition: gap var(--transition-fast);
+        }
+        .service-card:hover .learn-more {
+            gap: 8px;
+        }
+
+        /* ─── GUIDES SHOP ─── */
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .guide-card {
+            background: var(--white);
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+        .guide-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            border-color: var(--gold);
+        }
+        .guide-cover {
+            aspect-ratio: 3/4;
+            background: linear-gradient(160deg, var(--deep-violet-light), var(--deep-violet));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 20px;
+            letter-spacing: -0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+        .guide-cover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+            pointer-events: none;
+        }
+        .guide-cover.alt1 {
+            background: linear-gradient(160deg, #3D2A5E, #5C3D7A);
+        }
+        .guide-cover.alt2 {
+            background: linear-gradient(160deg, #1A0F30, #2D1B4E);
+        }
+        .guide-cover.alt3 {
+            background: linear-gradient(160deg, #4A2C6D, #6B4A8A);
+        }
+        .guide-body {
+            padding: 18px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .guide-body h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--deep-violet);
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+        .guide-body .guide-price {
+            font-weight: 700;
+            color: var(--gold-dark);
+            font-size: 1.1rem;
+            font-family: var(--font-ui);
+        }
+        .guide-body .btn {
+            margin-top: auto;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+        }
+
+        /* ─── TESTIMONIALS ─── */
+        .testimonials-section {
+            background: var(--neutral-50);
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            border: 1px solid var(--neutral-200);
+            transition: all var(--transition-smooth);
+        }
+        .testimonial-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+        .testimonial-card blockquote {
+            font-family: var(--font-body);
+            font-style: italic;
+            color: var(--neutral-600);
+            line-height: 1.6;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--gold-pale);
+            padding-left: 16px;
+            letter-spacing: -0.01em;
+        }
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--deep-violet);
+            font-size: 0.9rem;
+            font-family: var(--font-ui);
+        }
+        .testimonial-role {
+            font-size: 0.8rem;
+            color: var(--neutral-400);
+        }
+
+        /* ─── FAQ ─── */
+        .faq-list {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: all var(--transition-fast);
+            background: var(--white);
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 22px;
+            text-align: left;
+            font-family: var(--font-ui);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--deep-violet);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            letter-spacing: -0.01em;
+            transition: all var(--transition-fast);
+        }
+        .faq-question:hover {
+            background: var(--neutral-50);
+        }
+        .faq-icon {
+            flex-shrink: 0;
+            transition: transform var(--transition-smooth);
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-smooth), padding var(--transition-smooth);
+            padding: 0 22px;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding: 0 22px 18px;
+        }
+        .faq-answer p {
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: linear-gradient(160deg, var(--deep-violet), var(--deep-violet-dark));
+            color: var(--white);
+            text-align: center;
+            padding: 70px 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 70%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .cta-banner-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .cta-banner h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .cta-banner p {
+            opacity: 0.9;
+            margin-bottom: 28px;
+            font-size: 1.05rem;
+            letter-spacing: -0.01em;
+        }
+
+        /* ─── BLOG PREVIEW ─── */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .blog-card {
+            background: var(--white);
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all var(--transition-smooth);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .blog-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+            border-color: var(--gold);
+        }
+        .blog-card-image {
+            aspect-ratio: 16/9;
+            background: var(--neutral-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--neutral-300);
+        }
+        .blog-card-body {
+            padding: 18px;
+        }
+        .blog-card-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-family: var(--font-ui);
+            margin-bottom: 6px;
+        }
+        .blog-card-body h4 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--deep-violet);
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+        .blog-card-body p {
+            font-size: 0.85rem;
+            color: var(--neutral-500);
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+
+        /* ─── FOOTER ─── */
+        .footer {
+            background: var(--neutral-900);
+            color: var(--neutral-300);
+            padding: 60px 28px 30px;
+        }
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        .footer h5 {
+            font-family: var(--font-ui);
+            font-weight: 700;
+            color: var(--white);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 16px;
+        }
+        .footer a {
+            color: var(--neutral-400);
+            text-decoration: none;
+            font-size: 0.88rem;
+            display: block;
+            margin-bottom: 8px;
+            transition: color var(--transition-fast);
+            letter-spacing: -0.01em;
+        }
+        .footer a:hover {
+            color: var(--gold-light);
+        }
+        .footer-bottom {
+            max-width: var(--max-width);
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--neutral-500);
+            letter-spacing: -0.01em;
+        }
+        @media (max-width: 768px) {
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ─── WHATSAPP FLOAT ─── */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all var(--transition-bounce);
+            border: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
+        }
+        .whatsapp-tooltip {
+            position: fixed;
+            bottom: 90px;
+            right: 24px;
+            background: var(--white);
+            color: var(--neutral-700);
+            padding: 10px 16px;
+            border-radius: 50px;
+            font-family: var(--font-ui);
+            font-size: 0.82rem;
+            font-weight: 500;
+            box-shadow: var(--shadow-lg);
+            z-index: 998;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity var(--transition-smooth);
+            white-space: nowrap;
+            letter-spacing: -0.01em;
+        }
+        .whatsapp-tooltip.visible {
+            opacity: 1;
+        }
+
+        /* ─── PAGE TEMPLATES (hidden by default) ─── */
+        .page-template {
+            display: none;
+            padding-top: var(--nav-height);
+        }
+        .page-template.active {
+            display: block;
+        }
+        .page-hero {
+            background: linear-gradient(170deg, var(--cream) 0%, var(--off-white) 100%);
+            padding: 60px 28px 50px;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--deep-violet);
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+        .page-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 28px 60px;
+        }
+        .page-content h2 {
+            font-family: var(--font-display);
+            color: var(--deep-violet);
+            font-size: 1.6rem;
+            margin: 32px 0 12px;
+            letter-spacing: -0.01em;
+        }
+        .page-content p {
+            color: var(--neutral-600);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+
+        /* ─── OVERLAY ─── */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            display: none;
+        }
+        .overlay.show {
+            display: block;
+        }
+
+        /* ─── ANIMATIONS ─── */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── UTILITY ─── */
+        .text-center {
+            text-align: center;
+        }
+        .mt-20 {
+            margin-top: 20px;
+        }
+        .mt-40 {
+            margin-top: 40px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        /* ─── SCROLLBAR ─── */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--neutral-50);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--neutral-300);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo" onclick="navigateTo('home')">
+                <div class="nav-logo-icon">CE</div>
+                <div class="nav-logo-text">Coach Essékome<span>Psychologue • Coach Familiale</span></div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active" onclick="navigateTo('home')">Accueil</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">À propos</a></li>
+                <li><a href="#services" onclick="navigateTo('services')">Services</a></li>
+                <li><a href="#guides" onclick="navigateTo('guides')">Guides</a></li>
+                <li><a href="#workshops" onclick="navigateTo('workshops')">Ateliers</a></li>
+                <li><a href="#blog" onclick="navigateTo('blog')">Blog</a></li>
+                <li><a href="#contact" class="nav-cta-btn" onclick="navigateTo('contact')">Réserver une consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main id="mainContent">
+
+        <!-- ─── HOME PAGE ─── -->
+        <div id="page-home" class="page-template active">
+
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-inner">
+                    <div class="hero-badge"><span class="dot"></span> Psychologue • Coach Familiale Certifiée</div>
+                    <h1>Transformez votre <span class="gold-accent">famille</span>.<br>Guérissez vos <span class="gold-accent">blessures</span>.<br>Découvrez votre <span class="gold-accent">mission</span>.</h1>
+                    <p class="hero-subtitle">Une approche unique alliant psychologie scientifique, parentalité positive, développement de l'adolescent et accompagnement spirituel chrétien pour une transformation profonde et durable.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary" onclick="navigateTo('contact')">✨ Réserver une consultation</a>
+                        <a href="#guides" class="btn btn-outline" onclick="navigateTo('guides')">📚 Découvrir les guides</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOCIAL PROOF -->
+            <section class="social-proof">
+                <div class="social-proof-inner">
+                    <div class="social-proof-item"><span class="icon">🎓</span> <span><strong>15+ ans</strong> d'expérience</span></div>
+                    <div class="social-proof-item"><span class="icon">👨‍👩‍👧‍👦</span> <span><strong>3000+</strong> familles accompagnées</span></div>
+                    <div class="social-proof-item"><span class="icon">🏛️</span> <span><strong>200+</strong> institutions partenaires</span></div>
+                    <div class="social-proof-item"><span class="icon">📚</span> <span><strong>12</strong> guides publiés</span></div>
+                </div>
+            </section>
+
+            <!-- FRAMEWORK -->
+            <section class="framework-section">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label" style="color:var(--gold-light);">Notre Cadre de Transformation</div>
+                        <h2 class="section-title" style="color:var(--white);">Un parcours structuré vers la guérison et l'épanouissement</h2>
+                    </div>
+                    <div class="framework-grid">
+                        <div class="framework-card fade-up">
+                            <div class="framework-step">1</div>
+                            <h3>Comprendre</h3>
+                            <p>Explorer les racines profondes de vos défis émotionnels, relationnels et spirituels avec un regard psychologique éclairé.</p>
+                        </div>
+                        <div class="framework-arrow">→</div>
+                        <div class="framework-card fade-up">
+                            <div class="framework-step">2</div>
+                            <h3>Guérir</h3>
+                            <p>Traverser un processus de guérison intérieure intégrant les dimensions psychologiques et spirituelles de votre être.</p>
+                        </div>
+                        <div class="framework-arrow">→</div>
+                        <div class="framework-card fade-up">
+                            <div class="framework-step">3</div>
+                            <h3>Grandir</h3>
+                            <p>Développer des compétences relationnelles, émotionnelles et parentales pour une vie familiale épanouie.</p>
+                        </div>
+                        <div class="framework-arrow">→</div>
+                        <div class="framework-card fade-up">
+                            <div class="framework-step">4</div>
+                            <h3>Accomplir sa mission</h3>
+                            <p>Découvrir votre identité profonde et marcher dans votre vocation unique avec confiance et clarté.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES OVERVIEW -->
+            <section class="section" id="services-overview">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label">Nos Services</div>
+                        <h2 class="section-title">Un accompagnement sur mesure pour chaque saison de vie</h2>
+                        <p class="section-subtitle">Des consultations individuelles aux programmes institutionnels, chaque service est conçu pour répondre à vos besoins spécifiques avec excellence et compassion.</p>
+                    </div>
+                    <div class="services-grid">
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">👨‍👩‍👧‍👦</div>
+                            <h3>Coaching Parental</h3>
+                            <p>Élever des enfants émotionnellement sains, améliorer la communication et gérer l'adolescence avec sérénité.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">🧒</div>
+                            <h3>Coaching Adolescent</h3>
+                            <p>Aider les jeunes à construire leur identité, leur leadership et leur orientation de vie avec confiance.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">💝</div>
+                            <h3>Guérison Intérieure</h3>
+                            <p>Guérir les blessures émotionnelles, briser les schémas destructeurs et restaurer les relations.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">💑</div>
+                            <h3>Coaching Couple</h3>
+                            <p>Renforcer le mariage, améliorer la communication et développer des relations plus saines et durables.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">🎯</div>
+                            <h3>Orientation Carrière & Vie</h3>
+                            <p>Découvrir sa mission de vie et s'orienter professionnellement avec clarté et détermination.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                        <a href="#services" class="service-card fade-up" onclick="navigateTo('services')">
+                            <div class="service-icon">🏛️</div>
+                            <h3>Programmes Institutionnels</h3>
+                            <p>Ateliers, formations et certifications pour églises, écoles et organisations éducatives.</p>
+                            <span class="learn-more">En savoir plus →</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURED GUIDES -->
+            <section class="section" style="background:var(--neutral-50);" id="guides-overview">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label">Guides Numériques</div>
+                        <h2 class="section-title">Des ressources pratiques pour votre transformation</h2>
+                        <p class="section-subtitle">Des guides numériques conçus par une psychologue pour vous accompagner pas à pas vers la guérison et la croissance.</p>
+                    </div>
+                    <div class="guides-grid">
+                        <div class="guide-card fade-up">
+                            <div class="guide-cover">Éduquer un adolescent sans perdre la relation</div>
+                            <div class="guide-body">
+                                <h4>Éduquer un adolescent sans perdre la relation</h4>
+                                <p style="font-size:0.82rem;color:var(--neutral-500);">Guide pratique pour parents</p>
+                                <div class="guide-price">4 500 FCFA</div>
+                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
+                            </div>
+                        </div>
+                        <div class="guide-card fade-up">
+                            <div class="guide-cover alt1">Blessures Intergénérationnelles</div>
+                            <div class="guide-body">
+                                <h4>Blessures Intergénérationnelles</h4>
+                                <p style="font-size:0.82rem;color:var(--neutral-500);">Comprendre et guérir les héritages familiaux</p>
+                                <div class="guide-price">5 000 FCFA</div>
+                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
+                            </div>
+                        </div>
+                        <div class="guide-card fade-up">
+                            <div class="guide-cover alt2">Qui suis-je vraiment ?</div>
+                            <div class="guide-body">
+                                <h4>Qui suis-je vraiment ?</h4>
+                                <p style="font-size:0.82rem;color:var(--neutral-500);">Guide de découverte identitaire</p>
+                                <div class="guide-price">3 500 FCFA</div>
+                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
+                            </div>
+                        </div>
+                        <div class="guide-card fade-up">
+                            <div class="guide-cover alt3">Libérez Votre Adulte Intérieur</div>
+                            <div class="guide-body">
+                                <h4>Libérez Votre Adulte Intérieur</h4>
+                                <p style="font-size:0.82rem;color:var(--neutral-500);">Guérison et maturité émotionnelle</p>
+                                <div class="guide-price">4 500 FCFA</div>
+                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-40">
+                        <a href="#guides" class="btn btn-outline" onclick="navigateTo('guides')">Voir tous les guides →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section class="section testimonials-section">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label">Témoignages</div>
+                        <h2 class="section-title">Ce que disent ceux qui ont été accompagnés</h2>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card fade-up">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <blockquote>« Coach Essékome nous a aidés à restaurer la communication avec notre adolescent. En quelques séances, nous avons vu des changements profonds. Une approche qui allie sagesse, psychologie et foi. »</blockquote>
+                            <div class="testimonial-author">Marie & Joseph K.</div>
+                            <div class="testimonial-role">Parents, Cotonou</div>
+                        </div>
+                        <div class="testimonial-card fade-up">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <blockquote>« Les blessures que je portais depuis l'enfance ont enfin trouvé guérison. L'accompagnement est professionnel, profond et empreint de compassion. Je recommande à toute personne en quête de restauration. »</blockquote>
+                            <div class="testimonial-author">Sophie A.</div>
+                            <div class="testimonial-role">Enseignante</div>
+                        </div>
+                        <div class="testimonial-card fade-up">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <blockquote>« La formation MCPRA a transformé notre équipe éducative. Des outils concrets, une pédagogie claire et un impact durable sur notre communauté scolaire. »</blockquote>
+                            <div class="testimonial-author">Pasteur David M.</div>
+                            <div class="testimonial-role">Directeur d'établissement scolaire</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label">FAQ</div>
+                        <h2 class="section-title">Questions fréquentes</h2>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">Comment se déroule une première consultation ? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer"><p>La première séance est un temps d'écoute et d'évaluation. Nous explorons ensemble votre situation, vos besoins et vos objectifs. Vous repartez avec une compréhension claire du chemin à parcourir et des premières pistes d'action.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">Proposez-vous des consultations en ligne ? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer"><p>Oui, les consultations sont disponibles en présentiel et en visioconférence pour s'adapter à votre emploi du temps et à votre localisation, où que vous soyez dans le monde francophone.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">Quelle est la durée d'un accompagnement ? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer"><p>La durée varie selon vos besoins. Certaines problématiques se résolvent en 3 à 5 séances, d'autres nécessitent un suivi plus long. Nous définissons ensemble un plan personnalisé dès le début.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">L'approche est-elle uniquement religieuse ? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer"><p>Notre approche intègre la dimension spirituelle pour ceux qui le souhaitent, tout en restant ancrée dans des méthodes psychologiques validées. Chaque accompagnement est adapté à vos convictions personnelles, avec respect et professionnalisme.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BLOG PREVIEW -->
+            <section class="section" style="background:var(--neutral-50);" id="blog-preview">
+                <div class="section-inner">
+                    <div class="section-header">
+                        <div class="section-label">Blog & Ressources</div>
+                        <h2 class="section-title">Articles pour vous accompagner</h2>
+                    </div>
+                    <div class="blog-grid">
+                        <a href="#blog" class="blog-card fade-up" onclick="navigateTo('blog')">
+                            <div class="blog-card-image">📝</div>
+                            <div class="blog-card-body">
+                                <div class="blog-card-category">Parentalité</div>
+                                <h4>Comment gérer un adolescent difficile sans briser la relation</h4>
+                                <p>Des clés psychologiques pour maintenir le lien tout en posant des limites saines.</p>
+                            </div>
+                        </a>
+                        <a href="#blog" class="blog-card fade-up" onclick="navigateTo('blog')">
+                            <div class="blog-card-image">💡</div>
+                            <div class="blog-card-body">
+                                <div class="blog-card-category">Guérison Intérieure</div>
+                                <h4>Guérir les blessures émotionnelles : par où commencer ?</h4>
+                                <p>Un chemin structuré pour identifier et guérir les blessures du passé.</p>
+                            </div>
+                        </a>
+                        <a href="#blog" class="blog-card fade-up" onclick="navigateTo('blog')">
+                            <div class="blog-card-image">🙏</div>
+                            <div class="blog-card-body">
+                                <div class="blog-card-category">Foi & Psychologie</div>
+                                <h4>Psychologie et foi chrétienne : des alliées pour la guérison</h4>
+                                <p>Comment ces deux dimensions se complètent pour une transformation profonde.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL CTA -->
+            <section class="cta-banner">
+                <div class="cta-banner-inner">
+                    <h2>Prêt à entamer votre transformation ?</h2>
+                    <p>Prenez rendez-vous dès aujourd'hui et faites le premier pas vers une vie familiale épanouie, une guérison profonde et une mission clarifiée.</p>
+                    <a href="#contact" class="btn btn-gold" onclick="navigateTo('contact')">✨ Réserver une consultation gratuite</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ─── ABOUT PAGE ─── -->
+        <div id="page-about" class="page-template">
+            <section class="page-hero">
+                <h1>À propos de Coach Essékome</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Psychologue, Coach Familiale, Conseillère Chrétienne — une vocation au service des familles et des individus.</p>
+            </section>
+            <div class="page-content">
+                <h2>Une mission née de la conviction</h2>
+                <p>Coach Essékome est psychologue de formation, coach familiale certifiée et conseillère chrétienne. Son parcours unique l'a conduite à développer une approche intégrative qui allie les fondements de la psychologie scientifique, les principes de la parentalité positive, la dynamique des systèmes familiaux et l'accompagnement spirituel.</p>
+                <p>Fondatrice du programme <strong>MCPRA</strong> (Méthode de Coaching Parental et Relationnel Avancé), elle a formé des centaines d'éducateurs, de pasteurs et de parents à travers l'Afrique francophone. Son travail a touché plus de 3000 familles et collaboré avec plus de 200 institutions éducatives et ecclésiales.</p>
+                <h2>Une approche qui fait la différence</h2>
+                <p>Contrairement aux psychologues traditionnels, Coach Essékome intègre la dimension spirituelle dans l'accompagnement. Contrairement aux ministères purement religieux, son approche est ancrée dans des cadres psychologiques rigoureux et des méthodes éducatives structurées. C'est cette combinaison unique qui produit des transformations profondes et durables.</p>
+            </div>
+        </div>
+
+        <!-- ─── SERVICES PAGE ─── -->
+        <div id="page-services" class="page-template">
+            <section class="page-hero">
+                <h1>Nos Services</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Un accompagnement professionnel et personnalisé pour chaque étape de votre vie.</p>
+            </section>
+            <div class="page-content">
+                <div class="services-grid">
+                    <div class="service-card"><div class="service-icon">👨‍👩‍👧‍👦</div><h3>Coaching Parental</h3><p>Améliorez votre communication familiale, gérez les conflits et élevez des enfants équilibrés.</p></div>
+                    <div class="service-card"><div class="service-icon">👨‍👩‍👦</div><h3>Coaching Familial</h3><p>Restaurer l'harmonie et renforcer les liens au sein du système familial dans son ensemble.</p></div>
+                    <div class="service-card"><div class="service-icon">🧒</div><h3>Coaching Adolescent</h3><p>Aider votre adolescent à construire son identité, sa confiance et son avenir avec assurance.</p></div>
+                    <div class="service-card"><div class="service-icon">💝</div><h3>Guérison Intérieure</h3><p>Libérez-vous des blessures du passé et ouvrez la voie à une vie émotionnelle restaurée.</p></div>
+                    <div class="service-card"><div class="service-icon">🎯</div><h3>Orientation Carrière & Vie</h3><p>Découvrez votre mission et tracez un chemin professionnel aligné avec votre identité profonde.</p></div>
+                    <div class="service-card"><div class="service-icon">💑</div><h3>Coaching Couple</h3><p>Renforcez votre mariage, améliorez la communication et construisez une relation durable.</p></div>
+                    <div class="service-card"><div class="service-icon">⛪</div><h3>Ateliers pour Églises</h3><p>Des formations psycho-spirituelles adaptées aux besoins des communautés chrétiennes.</p></div>
+                    <div class="service-card"><div class="service-icon">🏫</div><h3>Conférences Éducatives</h3><p>Des interventions percutantes pour établissements scolaires et institutions éducatives.</p></div>
+                    <div class="service-card"><div class="service-icon">📜</div><h3>Certification MCPRA</h3><p>Devenez coach parental certifié avec notre programme de formation professionnelle.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── GUIDES PAGE ─── -->
+        <div id="page-guides" class="page-template">
+            <section class="page-hero">
+                <h1>Guides Numériques</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Des ressources pratiques élaborées par une psychologue pour votre croissance personnelle et familiale.</p>
+            </section>
+            <div class="page-content">
+                <div class="guides-grid">
+                    <div class="guide-card"><div class="guide-cover">L'Éducateur, Intendant de Dieu</div><div class="guide-body"><h4>L'Éducateur, Intendant de Dieu</h4><div class="guide-price">5 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover alt1">Éduquer un adolescent sans perdre la relation</div><div class="guide-body"><h4>Éduquer un adolescent sans perdre la relation</h4><div class="guide-price">4 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover alt2">Mon Ado n'est pas mon Ennemi</div><div class="guide-body"><h4>Mon Ado n'est pas mon Ennemi</h4><div class="guide-price">4 000 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover alt3">Jeune Aujourd'hui, Leader Demain</div><div class="guide-body"><h4>Jeune Aujourd'hui, Leader Demain</h4><div class="guide-price">3 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover">Qui suis-je vraiment ?</div><div class="guide-body"><h4>Qui suis-je vraiment ?</h4><div class="guide-price">3 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover alt1">Blessures Intergénérationnelles</div><div class="guide-body"><h4>Blessures Intergénérationnelles</h4><div class="guide-price">5 000 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── WORKSHOPS PAGE ─── -->
+        <div id="page-workshops" class="page-template">
+            <section class="page-hero">
+                <h1>Ateliers & Conférences</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Des expériences transformatrices pour vos communautés et institutions.</p>
+            </section>
+            <div class="page-content">
+                <h2>Ateliers disponibles</h2>
+                <p>Nous proposons des ateliers sur mesure pour les églises, les écoles, les associations et les entreprises. Chaque atelier est conçu pour répondre aux besoins spécifiques de votre public.</p>
+                <p><strong>Thématiques populaires :</strong> Parentalité positive • Gestion de l'adolescence • Guérison intérieure • Leadership conscient • Communication familiale • Discipline positive en milieu scolaire.</p>
+                <div class="text-center mt-40">
+                    <a href="#contact" class="btn btn-primary" onclick="navigateTo('contact')">Demander un atelier</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── BLOG PAGE ─── -->
+        <div id="page-blog" class="page-template">
+            <section class="page-hero">
+                <h1>Blog & Ressources</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Des articles pour vous accompagner dans votre parcours de transformation.</p>
+            </section>
+            <div class="page-content">
+                <div class="blog-grid">
+                    <a href="#" class="blog-card"><div class="blog-card-image">📝</div><div class="blog-card-body"><div class="blog-card-category">Parentalité</div><h4>Comment gérer un adolescent difficile</h4><p>Stratégies pratiques pour maintenir le dialogue.</p></div></a>
+                    <a href="#" class="blog-card"><div class="blog-card-image">💡</div><div class="blog-card-body"><div class="blog-card-category">Guérison</div><h4>Guérir les blessures émotionnelles</h4><p>Un chemin pas à pas vers la restauration.</p></div></a>
+                    <a href="#" class="blog-card"><div class="blog-card-image">🙏</div><div class="blog-card-body"><div class="blog-card-category">Foi</div><h4>Psychologie et foi chrétienne</h4><p>Deux alliées pour une transformation profonde.</p></div></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── CONTACT PAGE ─── -->
+        <div id="page-contact" class="page-template">
+            <section class="page-hero">
+                <h1>Contactez-nous</h1>
+                <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Prenez rendez-vous ou demandez des informations. Nous sommes là pour vous accompagner.</p>
+            </section>
+            <div class="page-content" style="max-width:700px;">
+                <form style="display:flex;flex-direction:column;gap:16px;" onsubmit="handleContactSubmit(event)">
+                    <input type="text" placeholder="Votre nom complet" required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
+                    <input type="email" placeholder="Votre adresse email" required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
+                    <select style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;background:white;">
+                        <option value="">Sujet de votre message</option>
+                        <option>Consultation individuelle</option>
+                        <option>Coaching parental</option>
+                        <option>Coaching adolescent</option>
+                        <option>Guérison intérieure</option>
+                        <option>Atelier / Conférence</option>
+                        <option>Partenariat institutionnel</option>
+                        <option>Autre</option>
+                    </select>
+                    <textarea rows="4" placeholder="Votre message..." required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:var(--radius-md);font-family:var(--font-body);font-size:0.95rem;resize:vertical;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Envoyer le message ✨</button>
+                </form>
+                <div style="margin-top:32px;padding:24px;background:var(--neutral-50);border-radius:var(--radius-lg);">
+                    <p><strong>📧 Email :</strong> contact@coachessékome.com</p>
+                    <p><strong>📱 WhatsApp :</strong> +229 XX XX XX XX</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <h5>Coach Essékome</h5>
+                <p style="font-size:0.88rem;color:var(--neutral-400);line-height:1.6;">Psychologue • Coach Familiale • Conseillère Chrétienne<br>Transformer des vies par la psychologie, l'éducation et la foi.</p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <a href="#services" onclick="navigateTo('services')">Coaching Parental</a>
+                <a href="#services" onclick="navigateTo('services')">Coaching Adolescent</a>
+                <a href="#services" onclick="navigateTo('services')">Guérison Intérieure</a>
+                <a href="#services" onclick="navigateTo('services')">Coaching Couple</a>
+            </div>
+            <div>
+                <h5>Ressources</h5>
+                <a href="#guides" onclick="navigateTo('guides')">Guides Numériques</a>
+                <a href="#blog" onclick="navigateTo('blog')">Blog</a>
+                <a href="#workshops" onclick="navigateTo('workshops')">Ateliers</a>
+                <a href="#contact" onclick="navigateTo('contact')">Contact</a>
+            </div>
+            <div>
+                <h5>Légal</h5>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+                <a href="#">Mentions légales</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coach Essékome. Tous droits réservés. Fait avec ❤️ pour les familles.</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
+    <div class="whatsapp-tooltip" id="whatsappTooltip">Discutons sur WhatsApp 💬</div>
+    <a href="https://wa.me/229XXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Contact WhatsApp">💬</a>
+
+    <!-- ═══════════ OVERLAY ═══════════ -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ═══════════ SCRIPTS ═══════════ -->
+    <script>
+        // ── NAVIGATION ──
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        const overlay = document.getElementById('overlay');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            overlay.classList.toggle('show');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+
+        overlay.addEventListener('click', closeMenu);
+
+        function closeMenu() {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            overlay.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+
+        // ── PAGE NAVIGATION ──
+        function navigateTo(pageName) {
+            closeMenu();
+            // Hide all pages
+            document.querySelectorAll('.page-template').forEach(p => p.classList.remove('active'));
+            // Show target page
+            const target = document.getElementById('page-' + pageName);
+            if (target) {
+                target.classList.add('active');
+            }
+            // Update nav active state
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            const navLink = document.querySelector(`.nav-links a[href="#${pageName}"]`);
+            if (navLink) navLink.classList.add('active');
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Update URL hash
+            if (pageName === 'home') {
+                history.pushState(null, '', window.location.pathname);
+            } else {
+                history.pushState(null, '', '#' + pageName);
+            }
+        }
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && document.getElementById('page-' + hash)) {
+                navigateToSilent(hash);
+            } else if (!hash) {
+                navigateToSilent('home');
+            }
+        });
+
+        function navigateToSilent(pageName) {
+            document.querySelectorAll('.page-template').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById('page-' + pageName);
+            if (target) target.classList.add('active');
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            const navLink = document.querySelector(`.nav-links a[href="#${pageName}"]`);
+            if (navLink) navLink.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
+        // Initialize based on URL hash
+        const initialHash = window.location.hash.replace('#', '');
+        if (initialHash && document.getElementById('page-' + initialHash)) {
+            navigateToSilent(initialHash);
+        }
+
+        // ── FAQ TOGGLE ──
+        function toggleFaq(button) {
+            const item = button.closest('.faq-item');
+            const wasOpen = item.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+            // Open clicked if it wasn't open
+            if (!wasOpen) {
+                item.classList.add('open');
+            }
+        }
+
+        // ── WHATSAPP TOOLTIP ──
+        const whatsappFloat = document.getElementById('whatsappFloat');
+        const whatsappTooltip = document.getElementById('whatsappTooltip');
+        let tooltipTimeout;
+
+        whatsappFloat.addEventListener('mouseenter', () => {
+            whatsappTooltip.classList.add('visible');
+            clearTimeout(tooltipTimeout);
+        });
+        whatsappFloat.addEventListener('mouseleave', () => {
+            tooltipTimeout = setTimeout(() => {
+                whatsappTooltip.classList.remove('visible');
+            }, 1500);
+        });
+        // Show tooltip on load
+        setTimeout(() => {
+            whatsappTooltip.classList.add('visible');
+            setTimeout(() => whatsappTooltip.classList.remove('visible'), 5000);
+        }, 2000);
+
+        // ── INTERSECTION OBSERVER FOR FADE-UP ──
+        const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -40px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // ── CONTACT FORM ──
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = '✨ Message envoyé !';
+            btn.style.background = '#4CAF50';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+                e.target.reset();
+            }, 3000);
+        }
+
+        // ── CLOSE MENU ON LINK CLICK ──
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    closeMenu();
+                }
+            });
+        });
+
+        console.log('%c🕊️ Coach Essékome %c— Site Web Premium',
+            'font-family:serif;font-size:1.4em;color:#2D1B4E;font-weight:bold;',
+            'color:#C9A84C;');
+        console.log('%cPsychologue • Coach Familiale • Conseillère Chrétienne', 'color:#7D766C;');
+    </script>
+</body>
+</html>
