@@ -724,6 +724,17 @@
             padding: 10px 20px;
             font-size: 0.85rem;
         }
+        .soon-badge {
+            display: inline-block;
+            background: var(--gold-pale);
+            color: var(--deep-violet);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 50px;
+            margin-top: 6px;
+            text-align: center;
+        }
 
         /* ─── TESTIMONIALS ─── */
         .testimonials-section {
@@ -1278,40 +1289,39 @@
                         <p class="section-subtitle">Des guides numériques conçus par une psychologue pour vous accompagner pas à pas vers la guérison et la croissance.</p>
                     </div>
                     <div class="guides-grid">
+                        <!-- Only the first guide is available now -->
                         <div class="guide-card fade-up">
-                            <div class="guide-cover">Éduquer un adolescent sans perdre la relation</div>
+                            <div class="guide-cover">L'Éducateur, Intendant de Dieu</div>
+                            <div class="guide-body">
+                                <h4>L'Éducateur, Intendant de Dieu</h4>
+                                <p style="font-size:0.82rem;color:var(--neutral-500);">Disponible sur MyChariow</p>
+                                <div class="guide-price">5 500 FCFA</div>
+                                <a href="https://gsjzwhyt.mychariow.shop/" target="_blank" rel="noopener" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                        <!-- Other guides: coming soon -->
+                        <div class="guide-card fade-up">
+                            <div class="guide-cover alt1">Éduquer un adolescent sans perdre la relation</div>
                             <div class="guide-body">
                                 <h4>Éduquer un adolescent sans perdre la relation</h4>
+                                <span class="soon-badge">Bientôt disponible</span>
                                 <p style="font-size:0.82rem;color:var(--neutral-500);">Guide pratique pour parents</p>
-                                <div class="guide-price">4 500 FCFA</div>
-                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
                             </div>
                         </div>
                         <div class="guide-card fade-up">
-                            <div class="guide-cover alt1">Blessures Intergénérationnelles</div>
+                            <div class="guide-cover alt2">Blessures Intergénérationnelles</div>
                             <div class="guide-body">
                                 <h4>Blessures Intergénérationnelles</h4>
+                                <span class="soon-badge">Bientôt disponible</span>
                                 <p style="font-size:0.82rem;color:var(--neutral-500);">Comprendre et guérir les héritages familiaux</p>
-                                <div class="guide-price">5 000 FCFA</div>
-                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
                             </div>
                         </div>
                         <div class="guide-card fade-up">
-                            <div class="guide-cover alt2">Qui suis-je vraiment ?</div>
+                            <div class="guide-cover alt3">Qui suis-je vraiment ?</div>
                             <div class="guide-body">
                                 <h4>Qui suis-je vraiment ?</h4>
+                                <span class="soon-badge">Bientôt disponible</span>
                                 <p style="font-size:0.82rem;color:var(--neutral-500);">Guide de découverte identitaire</p>
-                                <div class="guide-price">3 500 FCFA</div>
-                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
-                            </div>
-                        </div>
-                        <div class="guide-card fade-up">
-                            <div class="guide-cover alt3">Libérez Votre Adulte Intérieur</div>
-                            <div class="guide-body">
-                                <h4>Libérez Votre Adulte Intérieur</h4>
-                                <p style="font-size:0.82rem;color:var(--neutral-500);">Guérison et maturité émotionnelle</p>
-                                <div class="guide-price">4 500 FCFA</div>
-                                <a href="#guides" class="btn btn-primary" onclick="navigateTo('guides')">Acheter</a>
                             </div>
                         </div>
                     </div>
@@ -1469,12 +1479,12 @@
             </section>
             <div class="page-content">
                 <div class="guides-grid">
-                    <div class="guide-card"><div class="guide-cover">L'Éducateur, Intendant de Dieu</div><div class="guide-body"><h4>L'Éducateur, Intendant de Dieu</h4><div class="guide-price">5 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
-                    <div class="guide-card"><div class="guide-cover alt1">Éduquer un adolescent sans perdre la relation</div><div class="guide-body"><h4>Éduquer un adolescent sans perdre la relation</h4><div class="guide-price">4 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
-                    <div class="guide-card"><div class="guide-cover alt2">Mon Ado n'est pas mon Ennemi</div><div class="guide-body"><h4>Mon Ado n'est pas mon Ennemi</h4><div class="guide-price">4 000 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
-                    <div class="guide-card"><div class="guide-cover alt3">Jeune Aujourd'hui, Leader Demain</div><div class="guide-body"><h4>Jeune Aujourd'hui, Leader Demain</h4><div class="guide-price">3 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
-                    <div class="guide-card"><div class="guide-cover">Qui suis-je vraiment ?</div><div class="guide-body"><h4>Qui suis-je vraiment ?</h4><div class="guide-price">3 500 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
-                    <div class="guide-card"><div class="guide-cover alt1">Blessures Intergénérationnelles</div><div class="guide-body"><h4>Blessures Intergénérationnelles</h4><div class="guide-price">5 000 FCFA</div><a href="#" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover">L'Éducateur, Intendant de Dieu</div><div class="guide-body"><h4>L'Éducateur, Intendant de Dieu</h4><div class="guide-price">5 500 FCFA</div><a href="https://gsjzwhyt.mychariow.shop/" target="_blank" rel="noopener" class="btn btn-primary">Acheter</a></div></div>
+                    <div class="guide-card"><div class="guide-cover alt1">Éduquer un adolescent sans perdre la relation</div><div class="guide-body"><h4>Éduquer un adolescent sans perdre la relation</h4><span class="soon-badge">Bientôt disponible</span></div></div>
+                    <div class="guide-card"><div class="guide-cover alt2">Mon Ado n'est pas mon Ennemi</div><div class="guide-body"><h4>Mon Ado n'est pas mon Ennemi</h4><span class="soon-badge">Bientôt disponible</span></div></div>
+                    <div class="guide-card"><div class="guide-cover alt3">Jeune Aujourd'hui, Leader Demain</div><div class="guide-body"><h4>Jeune Aujourd'hui, Leader Demain</h4><span class="soon-badge">Bientôt disponible</span></div></div>
+                    <div class="guide-card"><div class="guide-cover">Qui suis-je vraiment ?</div><div class="guide-body"><h4>Qui suis-je vraiment ?</h4><span class="soon-badge">Bientôt disponible</span></div></div>
+                    <div class="guide-card"><div class="guide-cover alt1">Blessures Intergénérationnelles</div><div class="guide-body"><h4>Blessures Intergénérationnelles</h4><span class="soon-badge">Bientôt disponible</span></div></div>
                 </div>
             </div>
         </div>
@@ -1517,10 +1527,13 @@
                 <p style="color:var(--neutral-500);max-width:600px;margin:0 auto;">Prenez rendez-vous ou demandez des informations. Nous sommes là pour vous accompagner.</p>
             </section>
             <div class="page-content" style="max-width:700px;">
-                <form style="display:flex;flex-direction:column;gap:16px;" onsubmit="handleContactSubmit(event)">
-                    <input type="text" placeholder="Votre nom complet" required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
-                    <input type="email" placeholder="Votre adresse email" required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
-                    <select style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;background:white;">
+                <form id="contact-form" action="https://formspree.io/f/xjgnlkvq" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+                    <input type="text" name="name" placeholder="Votre nom complet" required data-fs-field
+                           style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
+                    <input type="email" name="email" placeholder="Votre adresse email" required data-fs-field
+                           style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;">
+                    <select name="subject" data-fs-field
+                            style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:50px;font-family:var(--font-body);font-size:0.95rem;background:white;">
                         <option value="">Sujet de votre message</option>
                         <option>Consultation individuelle</option>
                         <option>Coaching parental</option>
@@ -1530,12 +1543,22 @@
                         <option>Partenariat institutionnel</option>
                         <option>Autre</option>
                     </select>
-                    <textarea rows="4" placeholder="Votre message..." required style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:var(--radius-md);font-family:var(--font-body);font-size:0.95rem;resize:vertical;"></textarea>
-                    <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Envoyer le message ✨</button>
+                    <textarea name="message" rows="4" placeholder="Votre message..." required data-fs-field
+                              style="padding:14px 18px;border:1px solid var(--neutral-200);border-radius:var(--radius-md);font-family:var(--font-body);font-size:0.95rem;resize:vertical;"></textarea>
+                    <button type="submit" data-fs-submit-btn class="btn btn-primary" style="align-self:flex-start;">Envoyer le message ✨</button>
+                    <div data-fs-success style="display:none; margin-top:12px; color:#2D1B4E; font-weight:600;">
+                        ✨ Merci ! Votre message a été envoyé avec succès. Nous vous répondrons sous 48h.
+                    </div>
+                    <div data-fs-error style="display:none; margin-top:12px; color:#D32F2F; font-weight:500;"></div>
                 </form>
                 <div style="margin-top:32px;padding:24px;background:var(--neutral-50);border-radius:var(--radius-lg);">
-                    <p><strong>📧 Email :</strong> contact@coachessékome.com</p>
-                    <p><strong>📱 WhatsApp :</strong> +229 XX XX XX XX</p>
+                    <p><strong>📧 Email :</strong> coachessekome@gmail.com</p>
+                    <p><strong>📱 WhatsApp :</strong> +229 01 62 17 36 18</p>
+                    <p style="margin-top:12px;">
+                        <strong>🌐 Suivez-nous :</strong><br>
+                        <a href="https://www.facebook.com/profile.php?id=61575317986598" target="_blank" rel="noopener" style="color:var(--deep-violet);text-decoration:underline;">Page Facebook</a> •
+                        <a href="https://whatsapp.com/channel/0029VbAtwyO0LKZJNzYnPk3M" target="_blank" rel="noopener" style="color:var(--deep-violet);text-decoration:underline;">Chaîne WhatsApp</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1564,7 +1587,10 @@
                 <a href="#contact" onclick="navigateTo('contact')">Contact</a>
             </div>
             <div>
-                <h5>Légal</h5>
+                <h5>Suivez-nous</h5>
+                <a href="https://www.facebook.com/profile.php?id=61575317986598" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://whatsapp.com/channel/0029VbAtwyO0LKZJNzYnPk3M" target="_blank" rel="noopener">Chaîne WhatsApp</a>
+                <h5 style="margin-top:16px;">Légal</h5>
                 <a href="#">Politique de confidentialité</a>
                 <a href="#">Conditions d'utilisation</a>
                 <a href="#">Mentions légales</a>
@@ -1577,7 +1603,7 @@
 
     <!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
     <div class="whatsapp-tooltip" id="whatsappTooltip">Discutons sur WhatsApp 💬</div>
-    <a href="https://wa.me/229XXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Contact WhatsApp">💬</a>
+    <a href="https://wa.me/2290162173618" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Contact WhatsApp">💬</a>
 
     <!-- ═══════════ OVERLAY ═══════════ -->
     <div class="overlay" id="overlay"></div>
@@ -1617,20 +1643,15 @@
         // ── PAGE NAVIGATION ──
         function navigateTo(pageName) {
             closeMenu();
-            // Hide all pages
             document.querySelectorAll('.page-template').forEach(p => p.classList.remove('active'));
-            // Show target page
             const target = document.getElementById('page-' + pageName);
             if (target) {
                 target.classList.add('active');
             }
-            // Update nav active state
             document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
             const navLink = document.querySelector(`.nav-links a[href="#${pageName}"]`);
             if (navLink) navLink.classList.add('active');
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Update URL hash
             if (pageName === 'home') {
                 history.pushState(null, '', window.location.pathname);
             } else {
@@ -1638,7 +1659,6 @@
             }
         }
 
-        // Handle browser back/forward
         window.addEventListener('popstate', () => {
             const hash = window.location.hash.replace('#', '');
             if (hash && document.getElementById('page-' + hash)) {
@@ -1658,7 +1678,6 @@
             window.scrollTo({ top: 0, behavior: 'instant' });
         }
 
-        // Initialize based on URL hash
         const initialHash = window.location.hash.replace('#', '');
         if (initialHash && document.getElementById('page-' + initialHash)) {
             navigateToSilent(initialHash);
@@ -1668,9 +1687,7 @@
         function toggleFaq(button) {
             const item = button.closest('.faq-item');
             const wasOpen = item.classList.contains('open');
-            // Close all
             document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
-            // Open clicked if it wasn't open
             if (!wasOpen) {
                 item.classList.add('open');
             }
@@ -1690,7 +1707,6 @@
                 whatsappTooltip.classList.remove('visible');
             }, 1500);
         });
-        // Show tooltip on load
         setTimeout(() => {
             whatsappTooltip.classList.add('visible');
             setTimeout(() => whatsappTooltip.classList.remove('visible'), 5000);
@@ -1709,23 +1725,6 @@
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        // ── CONTACT FORM ──
-        function handleContactSubmit(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = '✨ Message envoyé !';
-            btn.style.background = '#4CAF50';
-            btn.disabled = true;
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-                btn.disabled = false;
-                e.target.reset();
-            }, 3000);
-        }
-
-        // ── CLOSE MENU ON LINK CLICK ──
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 if (navLinks.classList.contains('open')) {
@@ -1739,5 +1738,15 @@
             'color:#C9A84C;');
         console.log('%cPsychologue • Coach Familiale • Conseillère Chrétienne', 'color:#7D766C;');
     </script>
+
+    <!-- Formspree AJAX form handler -->
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', {
+        formElement: '#contact-form',
+        formId: 'xjgnlkvq'
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
